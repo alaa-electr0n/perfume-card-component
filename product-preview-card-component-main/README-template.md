@@ -11,10 +11,7 @@ This is a solution to the [Product preview card component challenge on Frontend 
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -32,8 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution on Github](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [solution on Github](https://github.com/alaa-electr0n/perfume-card-component)
 
 ## My process
 
@@ -43,62 +39,37 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I Learned more about Semantic HTML Element : <figure> and <figcaption> from [W3Schools as a resource](https://www.w3schools.com/tags/tag_figure.asp)
 
-To see how you can add code snippets, see below:
+The HTML structure is designed with a semantic approach to enhance accessibility and readability:
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+- **`<figure class="perfume">`**: Represents the main card container for the perfume details.
+  - **`<div class="perfume__hero">`**: Contains images displaying the perfume product in both desktop and mobile views.
+  - **`<div class="perfume__details">`**: Houses the title, description, price, and "Add to Cart" button.
+    - **`<h1 class="perfume__title">`**: Includes the perfume title.
+      - **`<span class="perfume__title-sub">`**: Represents the subtype or category of the perfume.
+      - **`<span class="perfume__title-main">`**: Displays the main title of the perfume.
+    - **`<figcaption class="perfume__description">`**: Provides a description of the perfume.
+    - **`<p class="perfume__price">`**: Displays the price of the perfume.
+    - **`<a href="#" class="btn btn--green">`**: A link styled as a button for adding the product to the cart.
+- **`<div class="attribution">`**: Displays attribution for the challenge and coder.
 
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
+#### Techniques Used in CSS
 
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
+The CSS code employs various techniques and practices to style the Perfume Card Component:
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- **Reset and Variables**: Utilizes a CSS reset to normalize styles across different browsers and defines variables for consistent color schemes and fonts.
+- **General Styling**:
+  - Utilizes `grid` for layout and positioning elements within the `.perfume` container.
+  - Defines responsive units (`rem`, `%`, `px`) for sizing and positioning elements.
+  - Utilizes `box-shadow` for a subtle shadow effect on the card.
+- **Responsiveness**:
+  - Implements media queries (`@media`) for responsiveness across different screen sizes.
+  - Adjusts font sizes, layout, and image display for smaller devices (e.g., mobiles).
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Frontend Mentor - [@alaa-electr0n](https://www.frontendmentor.io/profile/alaa-electr0n)
